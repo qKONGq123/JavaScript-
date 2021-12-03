@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 一元运算符，只需要一个操作数
+        //     + 正号
+        //         - 正号 不会对数字产生任何影响
+        //     - 负号
+        //         - 负号 可以对数字进行负号的取反
+        //初始状态
+        a = 1 + "2" + 3;
+        console.log("a = " + a);
+        console.log(typeof a)
+
+        //最终状态：
+        a = 1 + +"2" + 3;
+        console.log("a = " + a);
+        console.log(typeof a)
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
