@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 测试如下的程序性能
+        // 在程序执行前，开启计时器
+        // console.time("计时器的名字")可以用来开启一个计时器
+        // 它需要一个字符串作为参数，这个字符串将会作为计时器的标识
+        console.time("test")
+        for (var i=2;i<=100;i++) {
+				//假设i是质数，
+				var b=true;
+				//求证的过程，在1到i之间有没有能被整数整除的数
+				for (var j=2;j<i;j++) {
+					if(i%j==0){
+						//有数被整除了，就证明这个数不是质数
+						b=false;
+						break;
+					}
+				}
+				if(b==true){
+					document.write(i+"<br />")
+				}
+			}
+
+        // 终止计时器
+        // console.timeEnd()用来停止一个计时器，需要一个计时器的名字作为参数
+        console.timeEnd("test")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
