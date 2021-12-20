@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // // 创建外层循环，用来控制乘法表的高度
+        // for(var i =1;i<=9;i++)
+        // {
+        //     //创建一个内层循环来控制图形的宽度
+        //     for(var j = 1 ; j <= i;j++)
+
+        //     {
+        //         document.write("<span>"+ j+"*"+i+"="+i*j+"</span>")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+
+        for (var i=2;i<=100;i++) {
+				//假设i是质数，
+				var b=true;
+				//求证的过程，在1到i之间有没有能被整数整除的数
+				for (var j=2;j<i;j++) {
+					if(i%j==0){
+						//有数被整除了，就证明这个数不是质数
+						b=false;
+						break;
+					}
+				}
+				if(b==true){
+					document.write(i+"<br />")
+				}
+			}
+
+
+        
+    </script>
+    <style>
+        span{
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
