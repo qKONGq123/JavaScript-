@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var obj = new Object();
+        // obj.name = "The Monkey King"
+        // obj.var = "TOM"//It's an outlier
+        // console.log(obj.var)
+
+
+
+        var obj = new Object();
+        obj["123"] = 789
+        console.log(obj["123"])
+
+
+
+    // ---------------------------------------------------
+    var obj = new Object();
+        obj["123"] = 789//We need to be careful,There are no points,So when we go to the console.log,we need don't write points.
+        console.log(obj["123"])//such as,Anyway, I think the left property name , can Write directly to the console.
+
+
+    // --------------------------------------------------------
+
+
+    var obj = new Object();
+        obj["123"] = 789
+        obj["nihao"] = "hello"
+
+        var n = "nihao"// Variables are important in JavaScript,at the same time , variables can Better and easier work for programmers .
+        console.log(obj[n])//very important
+
+
+
+    // ---------------------------------------------------------
+
+    var obj = new Object();
+      obj.test = true;
+      obj.test = null;
+      obj.test = undefined;
+
+      //Create an object
+      var obj2 = new Object();
+      obj2.name = "Pig eight quit"
+
+      //Set object 2 as a property of object 1
+      obj.test = obj2;
+      console.log(obj.test.name);
+
+
+    //   ------------------------------------------------------
+    var obj = new Object();
+      obj.test = true;
+      obj.test = null;
+      obj.test = undefined;
+
+      //Create an object
+      var obj2 = new Object();
+      obj2.name = "Pig eight quit"
+
+      //Set object 2 as a property of object 1
+      obj.test = obj2;
+      console.log("test2" in obj);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
