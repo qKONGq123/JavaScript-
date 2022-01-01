@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function fun()
+        // {
+        //     // console.log("a = " +a+" , b = " + b)
+        //     console.log(this)
+        // }
+        // // fun()
+
+        // var obj = {
+        //     name:"the monkey kong",
+        //     sayName:fun
+        // }
+        // console.log(obj.sayName == fun)
+        // fun()
+        // obj.sayName()
+
+        //创建一个name变量
+        var name = "overland";
+
+        //创建一个fun( )函数
+        function fun()
+        {
+            console.log(name);
+        }
+        //创建2个对象
+        var obj = 
+        {
+            name:"沙和尚",
+            sayName:fun
+
+        }
+        var obj2 = 
+        {
+            name:"孙悟空",
+            sayName:fun
+
+        }
+        // fun();
+        obj.sayName()//我们希望用obj.sayName()时可以输出obj的名字。
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
