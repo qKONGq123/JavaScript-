@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function Person()
+        function Person(name,age,gender)
         {
-            
+           this.name = name
+           this.age = age
+           this.gender = gender
         }
         
-        var per = new Person()
+        var per = new Person("sunwukong",19,"men");
+        var per2 = new Person("rabbit",200,"women");
+        var per3 = new Person("sky",100000000,"no-gender");
 
-        console.log(per)
+        function Dog()
+        {
+
+        }
+        var dog = new Dog()
+        
+        // console.log(per)
+        // console.log(per2)
+        // console.log(per3)
+
+
+        console.log(per instanceof Person)
+        console.log(dog instanceof Object)
     </script>
 </head>
 <body>
