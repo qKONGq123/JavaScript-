@@ -15,6 +15,11 @@
         Myclass.prototype.a = 123;
 
 
+        Person.prototype.sayName = function()
+        {
+            alert("Hello大家好，我是" + this.name)
+        }
+
         var mc = new Myclass();
         
         var mc2 = new Myclass();
