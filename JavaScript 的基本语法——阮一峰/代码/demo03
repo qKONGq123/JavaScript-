@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>continue语句的应用</title>
+<script>
+     var sum = 0;
+     var str = "1~20之间的偶数有:";
+     //把1～20之间的偶数进行累加
+     for(var i = 1; i < 20; i++){
+         //判断i是否为偶数，如果模不等于0，为奇数，结束当前循环，进入下一次循环
+         if(i % 2 != 0)
+              continue;
+         sum += i; //如果执行continue语句，循环体内的该行以及后面的代码都不会被执行
+         str +=i + " ";
+     }
+     str += "\n这些偶数的和为:" + sum;
+     alert(str);
+</script>
+</head>
+<body>
+</body>
+</html>
+
